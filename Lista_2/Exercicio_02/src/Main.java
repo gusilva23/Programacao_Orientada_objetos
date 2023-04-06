@@ -21,24 +21,22 @@ public class Main {
             System.out.println("Digite o número de filhos do cidadão: ");
             numeroDeFilhos = scanner.nextInt();
 
-                somatorioFilhos = somatorioFilhos + numeroDeFilhos;
+            somatorioFilhos = somatorioFilhos + numeroDeFilhos;
 
-                if(salario > maiorSalario){
-                    maiorSalario =  salario;
-                }
+            if(salario > maiorSalario){
+                maiorSalario =  salario;
+            }
 
-                somatorioSalarios = somatorioSalarios + salario;
-                contador ++;
+            somatorioSalarios = somatorioSalarios + salario;
+            contador ++;
 
         }
-
         double mediaSalarial = somatorioSalarios / quantidadeHabitantes;
         double mediaFilhos = somatorioFilhos / quantidadeHabitantes;
 
         System.out.println ("A média salarial da cidade é: " + mediaSalarial + "\n");
         System.out.println ("A média  de filhos por habitante é: " + mediaFilhos + "\n");
         System.out.println ("O maior salario é: " + maiorSalario);
-
 
     }
 }

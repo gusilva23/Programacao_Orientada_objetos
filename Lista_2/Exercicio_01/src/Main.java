@@ -1,22 +1,23 @@
 import java.util.Scanner;
 public class Main {
-     public static String Verificarcategoria(int idade) {
+     public static String verificarCategoria(int idade) {
         if(idade >= 5 && idade <= 7){
-            System.out.println("Infantil A");
+            return "Infantil A";
         }else if(idade >= 8 && idade <=10){
-            System.out.println("Infantil B");
+            return "Infantil B";
         }else if(idade >= 11 && idade <= 13){
-            System.out.println("Juvenil A");
+            return "Juvenil A";
         }else if(idade >= 14 && idade <=17){
-            System.out.println("Juvenil B");
-        }else {
-            System.out.println("Adulto");
+            return "Juvenil B";
+        }else if(idade >= 18) {
+            return "Adulto";
         }
-        return "categoria";
+        return "Idade inválida";
 
     }
     public static void main(String[] args) {
-       String resultado = Verificarcategoria(7);
+       String resultado = verificarCategoria(18);
+       System.out.println(resultado);
 
     }
 }
