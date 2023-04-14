@@ -16,7 +16,7 @@ public class Main {
 
     }
     public static void main(String[] args) {
-       String resultado = verificarCategoria(18);
+       String resultado = verificarCategoria(1);
        System.out.println(resultado);
 
     }
